@@ -3,3 +3,9 @@ c(5, 10, 20)
 
 #vector series
 c(1:20)
+
+#vector series
+c(5:10)
+
+#R itu case-sensitive
+#penulisan vector pada R harus pakai huruf kecil
