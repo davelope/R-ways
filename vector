@@ -1,0 +1,5 @@
+#vector in R
+c(5, 10, 20)
+
+#vector series
+c(1:20)
