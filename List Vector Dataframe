@@ -1,0 +1,9 @@
+#VECTOR
+Vector adalah jenis data di R dengan struktur yang menyimpan deretan nilai (lebih dari satu nilai) dengan tipe data sama
+
+#script berikut kalau diprint hasilnya 90 nya juga akan ikut jadi string
+huruf <- c("Budi","Doraemon",90)
+huruf
+
+#LIST
+
