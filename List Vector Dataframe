@@ -1,9 +1,74 @@
-#VECTOR
+##VECTOR
 Vector adalah jenis data di R dengan struktur yang menyimpan deretan nilai (lebih dari satu nilai) dengan tipe data sama
 
 #script berikut kalau diprint hasilnya 90 nya juga akan ikut jadi string
 huruf <- c("Budi","Doraemon",90)
 huruf
 
-#LIST
+#VECTOR ACCESSOR
+angka <- c(10,20,30)
+angka
+angka[3]
+angka[[2]]
+angka[1:2]
 
+urutan_angka <- c(10:20)
+urutan_angka
+urutan_angka[3]
+urutan_angka[2:3]
+
+#seluruh kode diatas, pakai print juga bisa, ga juga bisa.
+
+#COBAIN ISINYA TEXT
+kode_jurusan <- c("Eko","Kim","Fis")
+kode_jurusan
+
+#NAMED VECTOR
+nilai_kuliah <- c(fisika = 100, statistika = 90, kimia = 55)
+nilai_kuliah
+nilai_kuliah['kimia']
+
+profil <- c(nama = 'Budi', jurusan = 'Akuntansi', IPK=3.5)
+profil
+
+
+##LIST
+#List adalah jenis data di R yang mirip dengan vector,
+#perbedaannya adalah list dapat menyimpan lebih dari satu jenis data.
+
+list_random <- list(2, "Budi", 4)
+
+# Menampilkan isi list
+list_random 
+
+# Buat variable kota sesuai permintaan soal
+kota <- list(nama_kota = "Makassar", propinsi = "Sulawesi Selatan" , luas_km2 = 199.3)
+
+# Tampilkan isi variable list kota
+print(kota)
+
+#CONTOH LAIN
+list_satu <- list(1, "Online", TRUE)
+print(list_satu[[1]])
+
+#DATAFRAME
+#Data frame adalah jenis struktur data yang dirancang untuk representasi table,
+#yang terdiri dari banyak kolom dengan tiap kolom berisi list
+#ataupun vector dengan jumlah data yang sama.
+
+#Membuat tiga variable vector
+fakultas <- c("Bisnis", "D3 Perhotelan", "ICT", "Ilmu Komunikasi", "Seni dan Desain")
+jumlah_mahasiswa <- c(260, 28, 284, 465, 735)
+akreditasi <- c("A","A","B","A","A")
+
+#Membuat data frame dari kedua vector di atas
+info_mahasiswa <- data.frame(fakultas, jumlah_mahasiswa, akreditasi)
+
+#Menampilkan kolom jumlah_mahasiswa
+info_mahasiswa$jumlah_mahasiswa
+
+#Menampilkan kolom fakultas
+info_mahasiswa$fakultas
+
+#Menampilkan keseluruhan dataframe
+info_mahasiswa
