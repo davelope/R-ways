@@ -3,3 +3,11 @@
 
 print("Hello World")
 print(3 + 4)
+
+#ini semua adalah data berbeda
+01
+1
+"01-01-1980"
+"1-1-1980"
+"Budi"
+"BUDI"
