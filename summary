@@ -1,0 +1,2 @@
+#summary dari suatu vector
+summary(c(1:5))
