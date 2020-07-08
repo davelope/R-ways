@@ -1,2 +1,5 @@
 a = 5
 print (a)
+
+budi_doremi <- 100
+budi_doremi
