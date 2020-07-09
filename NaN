@@ -1,0 +1,9 @@
+NaN adalah representasi khusus untuk angka.
+Singkatan dari Not a Number, ini adalah representasi operasi matematika yang tidak bisa diwakili oleh angka apapun.
+Sering sekali bisa dianggap missing value tapi untuk hasil perhitungan.
+
+Contoh perhitungan yang menghasilkan NaN adalah ketika angka 0 dibagi dengan 0.
+Ini tidak bisa dirasionalkan, sehingga NaN adalah representasi yang paling tepat.
+
+x<- 0/0
+x
