@@ -1,0 +1,7 @@
+#berbeda dari vector
+#pada list, data Null ditampilkan apa adanya
+
+isilist <- list(1,4,5,6,NA,NULL,10)
+isilist
+
+length(isilist)
