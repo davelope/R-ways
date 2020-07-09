@@ -1,0 +1,11 @@
+NA, NULL dan NaN adalah tiga nilai khusus untuk merepresentasikan missing values atau nilai yang hilang di R.
+
+Jika ketiganya dimasukkan ke dalam factor melalui deklarasi vector, maka prinsip berikut tetap berlaku:
+
+Na dan NaN akan menjadi bagian dari isi factor, NULL akan dihilangkan
+Hanya NaN yang akan dikenali sebagai levels
+
+#Buatlah variable factor.lokasi dengan isi berupa vector c("Bandung", "Jakarta", NA, "Jakarta", NaN, "Medan", NULL, NULL, "Bandung") 
+factor.lokasi <- factor(c("Bandung","Jakarta",NA,"Jakarta",NaN,"Medan",NULL,NULL,"Bandung"))
+#Tampilkan factor.lokasi
+factor.lokasi
