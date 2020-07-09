@@ -1,0 +1,7 @@
+#factor menyimpan data yg bersifat diskrit atau terbatas
+#disebut juga kategorikal atau nominal
+#contoh gender, bulan dalam setahun, dll
+#kalau tidak diskrit seperti tinggi badan, berat badan, dll, itu tidak masuk ke factor
+#dipakai saat analisa statistik,menggambar grafik (plotting) misal pakai ggplot2,pemodelan regresi, machine learning
+#contoh praktis pada ggplot2, legend harus menggunakan factor
+#jadi intinya, factor dapat digunakan untuk memastikan data bersifat diskrit atau terbatas
