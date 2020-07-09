@@ -1,0 +1,4 @@
+isivec <- factor(c(1,4,5))
+levels(isivec)
+
+#levels
