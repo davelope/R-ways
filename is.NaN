@@ -1,0 +1,5 @@
+NaN == NaN
+[1] NA
+
+is.nan(NaN)
+[1] TRUE
