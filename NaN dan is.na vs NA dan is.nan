@@ -1,0 +1,7 @@
+> is.na(NaN)
+[1] TRUE
+
+> is.nan(NA)
+[1] FALSE
+
+#dengan ini maka dapat dibedakan antara missing value dan value yg tidak dapat didefinisikan
