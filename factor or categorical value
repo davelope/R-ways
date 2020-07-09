@@ -5,3 +5,13 @@
 #dipakai saat analisa statistik,menggambar grafik (plotting) misal pakai ggplot2,pemodelan regresi, machine learning
 #contoh praktis pada ggplot2, legend harus menggunakan factor
 #jadi intinya, factor dapat digunakan untuk memastikan data bersifat diskrit atau terbatas
+
+#factor diurutkan alfabetikal
+
+factorisi <- factor(c(5,4,6,7))
+factorisi
+
+factorisi2 <- factor(c("Jan","Feb","Mar"))
+factorisi2
+
+#diurut dari terkecil
