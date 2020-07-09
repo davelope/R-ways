@@ -1,2 +1,5 @@
 x == na
 is.na(x)
+
+isi_vector <- c(1,2,NA,3)
+is.na(isi_vector)
