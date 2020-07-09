@@ -7,3 +7,8 @@ Ini tidak bisa dirasionalkan, sehingga NaN adalah representasi yang paling tepat
 
 x<- 0/0
 x
+
+log(100)
+
+#log dari angka negatif hasilnya NaN
+log(-100)
