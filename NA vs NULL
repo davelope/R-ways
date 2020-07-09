@@ -1,0 +1,7 @@
+NA sebagai indikator missing value, NULL tidak terdefinisi
+NA sebagai indikator, NULL tidak terdefinisi
+NA panjang length 1, NULLL panjang length 0
+NA tipe logical, NULL tipe object
+NA punya variasi, NULL tidak punya
+NA contoh kasus:ketika membaca data yg tidak memiliki nilai
+NULL contoh kasus:ketika mengakses posisi index yg tidak terdapat pada list
