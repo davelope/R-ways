@@ -1,0 +1,8 @@
+#inf adalah representasi dari infinite number
+#seluruh angka yg dibagi 0 maka akan menjadi infinite number
+
+#Hitung kalkulasi 5 dibagi dengan 0
+5/0
+
+#Hitung kalkulasi -120 dibagi dengan 0
+-120/0
