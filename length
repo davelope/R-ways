@@ -1,0 +1,5 @@
+#length untuk menghitung elemen, pada vector misalnya
+#ingat bahwa null tidak terdeteksi sebagai elemen
+
+vectorisi <- c(1,4,5)
+length(vectorisi)
