@@ -9,3 +9,6 @@ Hanya NaN yang akan dikenali sebagai levels
 factor.lokasi <- factor(c("Bandung","Jakarta",NA,"Jakarta",NaN,"Medan",NULL,NULL,"Bandung"))
 #Tampilkan factor.lokasi
 factor.lokasi
+
+length(factor.lokasi)
+#NULL tidak dihitung/tidak dianggap
