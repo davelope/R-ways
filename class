@@ -1,0 +1,2 @@
+isivec <- factor(c(1,4,5))
+class(isivec)
