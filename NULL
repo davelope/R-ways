@@ -1,0 +1,10 @@
+#objek yg tidak dapat direpresentasikan nilainya
+#null tidak dianggap dalam vector
+
+vectorisi <- c(1,3,5,NA,NULL,8)
+vectorisi
+
+#test elemen apakah benar tidak terdetek
+length(vectorisi)
+
+#hasilnya adalah null tidak terdetek, maka hanya ada 5 elemen saja
