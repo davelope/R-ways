@@ -21,3 +21,6 @@ nama_bulan <- factor(c("Jan","Feb","Mar","Jan","Mar"))
 nama_bulan
 #tidak bisa ada perulangan data pada factor
 
+#angka yg dimasukan ke factor akan diubah menjadi teks
+#sifatnya sama seperti string, untuk categorical value
+
