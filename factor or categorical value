@@ -15,3 +15,9 @@ factorisi2 <- factor(c("Jan","Feb","Mar"))
 factorisi2
 
 #diurut dari terkecil
+
+#############################
+nama_bulan <- factor(c("Jan","Feb","Mar","Jan","Mar"))
+nama_bulan
+#tidak bisa ada perulangan data pada factor
+
