@@ -1,0 +1,5 @@
+#Membaca dataset dengan read.csv dan dimasukkan ke variable penduduk.dki
+penduduk.dki <- read.csv("https://academy.dqlab.id/dataset/dkikepadatankelurahan2013.csv", sep=",")
+str(penduduk.dki)
+
+#cara ini bagus untuk pengenalan data pada tahap awal
