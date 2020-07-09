@@ -1,0 +1,11 @@
+#Buatlah factor dengan teks "Jan", "Feb", "Mar","Jan","Mar", dan "Jan"
+factor.bulan <- factor(c("Jan","Feb","Mar","Jan","Mar","Jan"))
+#Mengganti levels
+as.integer(factor.bulan)
+levels(factor.bulan)[2] <- "Januari"
+levels(factor.bulan)[3] <- "Maret"
+factor.bulan
+
+#langkah1: tau letak indeksnya
+#langkah2: mengubah nilainya
+#kalau ada perulangan elemen, maka semua elemen yg sama akan ikut berubah
