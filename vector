@@ -22,3 +22,8 @@ simple[c(1,3,4)]
 simplo = c(10,20,40,80)
 simplo[2:4]
 
+#mengubah elemen
+changelemen = c(10,20,40,80)
+changelemen[2] = 1000
+
+changelemen
