@@ -9,3 +9,7 @@ c(5:10)
 
 #R itu case-sensitive
 #penulisan vector pada R harus pakai huruf kecil
+
+#vector accessing
+simpan = c(10,20,40) #bisa pakai = atau <-
+simpan[10]
