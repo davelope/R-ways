@@ -1,0 +1,2 @@
+skalartest <- c(10,4,5)
+skalartest*2
