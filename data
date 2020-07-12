@@ -1,0 +1,3 @@
+#R punya datasets bawaan, tinggal ketik
+data()
+#untuk melihat  data built in apa saja yg tersedia
