@@ -1,0 +1,3 @@
+indextest <- c(10,48,900)
+indextest[1]
+indextest[1:2]
