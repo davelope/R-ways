@@ -1,0 +1,8 @@
+x <- 1:10
+for (i in x){
+  if(i ==5){
+    next
+  }
+  print(i)
+}
+#perhatikan angka 5 hilang
