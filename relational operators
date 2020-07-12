@@ -1,0 +1,10 @@
+#relational operators #biasain pakai <- , ini lupa !
+a = 10
+b = 20
+
+a > b
+a < b
+a <= b
+a >= b
+a == b
+a != b
