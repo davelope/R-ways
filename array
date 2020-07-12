@@ -1,0 +1,12 @@
+#array itu bentuknya 3 dimensi
+
+A = array(c(1,2,3,4,5,6,7,8,9,10,11,12),c(2,3,2))
+#maknanya ada 12 elemen pada array A
+#dengan penulisannya row 2 kolom 3 dan 2 split
+#kenapa split? karena tidak akan cukup dalam 1 array saja
+A
+
+B <- array(c('green','yellow'), dim = c(3,3,2))
+print(B)
+
+#jadi bisa 2 alternatif untuk mengerjakan ini
