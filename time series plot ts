@@ -1,0 +1,5 @@
+df <- data.frame(mtcars)
+df
+
+ts.plot(df$cyl)
+#atau bisa juga plot.ts(df$mpg)
