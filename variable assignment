@@ -1,5 +1,31 @@
+#leftward assignment
 a = 5
 print (a)
 
 budi_doremi <- 100
 budi_doremi
+
+bakso <<- 1000
+bakso
+
+#rightward assignment
+190 -> x
+x
+
+#ini kalau menurut buku bisa, tapi dicoba gabisa
+#ternyata ini untuk superassignment (nanti cek lagi)
+AB ->> "54code"
+AB
+
+#####PENTING##############
+PERBEDAAN PAKAI = DAN <-
+kalau mau dijadikan operator, pakai <- (lebih aman)
+contoh:
+median(x=1:10) #kalau pakai ini object not found
+x
+
+#vs
+
+median(y<-1:10)
+y
+#kalau mau dijadiin operator, x nya itu harus pakai <-
