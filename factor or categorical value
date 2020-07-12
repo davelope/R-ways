@@ -24,3 +24,13 @@ nama_bulan
 #angka yg dimasukan ke factor akan diubah menjadi teks
 #sifatnya sama seperti string, untuk categorical value
 
+#############################
+#contoh lain factor
+gender <- factor(c("Female","Male","Female"))
+gender #menunjukkan faktor 
+
+nlevels(gender) #menunjukkan banyaknya level
+levels(gender) #menunjukkan level apa saja
+length(gender) #menghitung anggota faktor
+
+##############################
