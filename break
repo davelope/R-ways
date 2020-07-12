@@ -1,0 +1,11 @@
+#break
+a<-0
+print("break pada repeat loop")
+
+repeat {
+print(a)
+a = a+2
+if(a>8){
+  break
+}
+}
