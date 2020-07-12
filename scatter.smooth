@@ -1,0 +1,4 @@
+df <- data.frame(mtcars)
+df
+
+scatter.smooth(df$mpg)
