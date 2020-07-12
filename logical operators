@@ -1,0 +1,8 @@
+#logical operators
+#element wise itu akan dicek element per element
+
+! logical not
+% element-wise logical AND
+%% logical AND
+| element-wise logical OR
+|| logical OR
