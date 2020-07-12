@@ -5,3 +5,8 @@
 10 ^ 2
 10%%2 (modulus atau remainder dari pembagian)
 %/% (integer division) #seperti pembagian biasa saja, remainder dibuang
+
+a=log(123)
+b=sin(123)
+a
+b
