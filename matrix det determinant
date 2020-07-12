@@ -1,0 +1,3 @@
+dettest <- matrix(c(22,34,24,31),2,2)
+det(dettest)
+#determinan harus square matrix atau kolom dan baris sama
