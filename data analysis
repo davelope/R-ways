@@ -1,0 +1,36 @@
+#Data analysis dibagi 2 besar, Qualitative dan Quantitative
+######Quantitative#########
+#Quantitative dibagi 2 : Descriptive Analysis dan Inferential Analysis
+#Descriptive : mencari Summary, pola / pattern
+#beberapa contoh: mean, median, mode, percentage, frequency, range
+#kelemahan : tidak dapat menjelaskan kaitan / relasi dibalik angka2 tsb
+#sering dipakai untuk single variable / univariate analysis
+
+#inferential : mengeneralisasi , bisa juga memprediksi
+#inferential melibatkan multivariable / multivariate
+#contoh :
+#Correlation / korelasi : hub. 2 buah variable , hubungan bisa searah atau 2 arah
+#contoh logika : makin tinggi orang, makin berat badannya
+#tapi bukan berarti kalau orang dikasih makan banyak, dan berat bertambah
+#tingginya ikut nambah juga, kan?
+#jadi dalam hal ini, tinggi mempengaruhi berat badan, namun berat badan belum tentu mempengaruhi tinggi badan
+
+#Regression /  relasi : menebak berat badan orang berdasarkan tinggi badannya
+
+#Analysis of Variance : derajat keragaman (vary/differ) , makin tinggi nilainya maka menandakan adanya penemuan penting dari riset tsb
+
+############Qualitative###########
+#content analysis : menilai respons dari interview
+#narrative analysis : 
+#discourse : ada observasi lingkungan
+#grounded : 
+
+#Pembagian DA berdasarkan jumlah variablenya :
+#single variable / univariate Analysis : biasa dilakukan di tahap awal penelitian
+#two variable / bivariate : biasa dilakukan untuk melihat hubungan, sekuat apa, dan trend / pola
+#multivariable / multivariate : uji varians, dll
+
+#############Graphical DA###############
+#contoh: scatterplot, barplot, boxplot, pie chart, histogram, venn diagram
+
+
