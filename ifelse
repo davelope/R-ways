@@ -1,0 +1,3 @@
+#alternatif else if adalah ifelse
+x <- as.numeric(readline(prompt="ketikan angka: "))
+ifelse(x>0, "Bilangan positif","Bilangan negatif")
