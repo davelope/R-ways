@@ -1,0 +1,7 @@
+abjad <- letters[1:5]
+abjad
+
+ABJAD <- LETTERS[1:6]
+ABJAD
+
+#untuk memunculkan urutan huruf
