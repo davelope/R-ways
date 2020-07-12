@@ -1,0 +1,7 @@
+kali1 <- matrix(c(2,3,4),3,1)
+kali2 <- matrix(c(3,1,5),3,1)
+kali2 <- t(kali2)
+
+#menurut buku sih pakai %*% , tapi dicoba * juga udah bisa
+hasilkali <- kali1 * kali2
+hasilkali
