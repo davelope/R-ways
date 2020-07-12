@@ -1,0 +1,21 @@
+######INI UNTUK UNIVARIAT
+
+#secara umum ada 2 variable dalam GDA pada R
+#response variable, disajikan pada sumbu Y
+#explanatory variable, disajikan pada sumbu X
+
+#histogram var di X, frekuensi pada Y
+#barchart var di Y, frekuensi pada X
+
+#TIPS
+#kalau explanatory variable adalah variable kontinu, seperti panjang, berat, ketinggian
+#gunakan scatterplot
+
+#kalau explanatory variable adalah variable categorical, seperti genotipe, warna, gender, gunakan boxplot atau barplot
+
+#kalau data harus dimodelkan untuk prediksi, gunakan time series plot
+
+#kalau mau disajikan dalam proporsi atau perbandingan, gunakan pie chart, misal: perbandingan wanita vs pria di kota
+
+#############INI UNTUK BIVARIAT
+
