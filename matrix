@@ -3,3 +3,15 @@ a
 
 b = matrix(1:10,5,2) #row 2 column 5
 print(b)
+
+#matrix bisa dioperasikan asalkan sama antar matrixnya
+#contoh dibawah akan menghasilkan nilai elemen yg nilainya 2x lipat
+a <- matrix(1:10)
+b <- matrix(1:10)
+
+a+b
+
+#matrix harus dalam bentuk range, lihat pola penulisan di baris awal sebagai contohnya
+#kalau dibikin gini, ini artinya ada angka 10, dalam 2 kolom, 5 baris
+asal <- matrix(10,2,5)
+asal
