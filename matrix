@@ -1,7 +1,7 @@
-a = matrix(1:10,2,5) #row 5 column 2
+a = matrix(1:10,2,5, TRUE) #row 5 column 2 #ini ditambahin sortingnya
 a
 
-b = matrix(1:10,5,2) #row 2 column 5
+b = matrix(1:10,5,2, FALSE) #row 2 column 5 #kalau gadiset, ya hasilnya by default aja
 print(b)
 
 #matrix bisa dioperasikan asalkan sama antar matrixnya
@@ -15,3 +15,6 @@ a+b
 #kalau dibikin gini, ini artinya ada angka 10, dalam 2 kolom, 5 baris
 asal <- matrix(10,2,5)
 asal
+
+#alternatif penulisan matrix
+cekmat <- matrix((1:10),nrow=5, ncol=2, byrow = TRUE)
