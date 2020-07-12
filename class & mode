@@ -1,0 +1,3 @@
+isivec <- factor(c(1,4,5))
+class(isivec) #struktur data
+mode(isivec) #lebih ke arah tipe data
