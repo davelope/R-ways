@@ -1,0 +1,7 @@
+#boxplot merepresentasikan sekumpulan data numerik
+#dengan quartiles (minimum, maksimum, upper, lower quartiles)
+
+df <- data.frame(mtcars)
+df
+
+boxplot(df$mpg)
