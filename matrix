@@ -1,0 +1,5 @@
+a = matrix(1:10,2,5) #row 5 column 2
+a
+
+b = matrix(1:10,5,2) #row 2 column 5
+print(b)
