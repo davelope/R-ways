@@ -1,0 +1,10 @@
+help()
+atau
+help(function)
+misal summmary, mode, dll
+
+#bisa juga pakai tanda tanya di awal, baru kemudian fungsinya
+
+contoh ?summary
+
+#tapi lebih baik pakai help aja, lebih aman, lebih pasti
