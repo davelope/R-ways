@@ -1,0 +1,4 @@
+starting <- 0
+
+while (starting < 10) {print(starting)
+  starting <- starting + 3}
