@@ -8,3 +8,6 @@ misal summmary, mode, dll
 contoh ?summary
 
 #tapi lebih baik pakai help aja, lebih aman, lebih pasti
+
+contoh lagi::
+help(arithmetic)
