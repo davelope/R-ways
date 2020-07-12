@@ -1,0 +1,13 @@
+#control structure disebut juga control flow
+#control flow dibagi 2 : loop / pengulangan dan choice / pilihan percabangan
+#loop : for, while, repeat, break, next
+#for pengulangan dengan jumlah tertentu yg ditentukan dari awal
+#while pengulangan selama kondisi masih bernilai TRUE
+#repeat infinite loop / pengulangan terus menerus
+#break menghentikan loop
+#next melewati iterasi pada loop
+
+#choice
+#if
+#if else
+#switch
