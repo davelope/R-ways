@@ -1,0 +1,7 @@
+#coba dikombinasikan dengan user input
+#eksekusi harus satu2
+
+a<-readline(prompt = "Masukkan")
+
+if (a>10) {print("Angka adalah 19.")}
+
