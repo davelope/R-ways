@@ -1,0 +1,4 @@
+help(reserved)
+#ini adalah daftar kata yg tidak boleh digunakan, misal sebagai variable
+
+bisa juga pakai ?reserved
