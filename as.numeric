@@ -1,0 +1,11 @@
+#coba dikombinasikan dengan user input
+a<-readline(prompt = "Masukkan")
+a <- as.numeric(a)
+
+if (a>10) {print(a+20)}
+
+class(a)
+
+
+#kalau tipe tidak diubah, gabisa dioperasikan karena
+#inputan dalam bentuk string
