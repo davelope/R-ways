@@ -1,2 +1,7 @@
 10+7
 9*3
+10-3
+10/2
+10 ^ 2
+10%%2 (modulus atau remainder dari pembagian)
+%/% (integer division)
