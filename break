@@ -1,4 +1,4 @@
-#break
+#break contoh 1
 a<-0
 print("break pada repeat loop")
 
@@ -8,4 +8,28 @@ a = a+2
 if(a>8){
   break
 }
+}
+
+#break contoh 2
+b = c(2,4,6,8,10,12)
+print("break pada for loop")
+
+for(i in b){
+  if(i == 10){
+    break
+  }
+  print(i)
+}
+
+#break contoh 3
+a = 0
+b = 4
+print("break pada while loop")
+
+while(a<10){
+  print(a)
+  a = a + 1
+  if(b+a>6){
+    break
+  }
 }
