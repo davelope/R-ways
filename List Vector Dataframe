@@ -72,3 +72,32 @@ info_mahasiswa$fakultas
 
 #Menampilkan keseluruhan dataframe
 info_mahasiswa
+
+############################
+#contoh lain membuat dataframe
+
+namaorang <- c("Agus","Benny","Cita")
+hobi <- c("Bola","Tennis","Dansa")
+umur <- c(10, 25, 45)
+
+df <- data.frame(namaorang,hobi,umur) #labelling atau diberi nama kolom
+names(df) <- c("nama","hobi","umur")
+df
+
+############################
+#contoh lain lagi
+#ini harus pakai = , kalau ga gagal
+
+datawarna <- data.frame(kode = c(1,2,3), warna = c('hitam','merah','putih'))
+datawarna
+
+#karena pakai = jadi variabel yg digunakan tidak bisa dimunculkan / dipanggil
+kode
+warna
+
+#############################
+#contoh lain lagi, ini nyoba pakai range, bisa juga
+#ini harus pakai = , kalau ga gagal
+
+datawarna <- data.frame(x=1:3, warna = c('hitam','merah','putih'))
+datawarna
