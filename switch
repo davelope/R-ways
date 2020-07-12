@@ -1,0 +1,16 @@
+switch(3, "masuk","tidak","entah kemana")
+
+#coba modif
+
+print("Merah: 1, Hijau: 2, Kuning: 3")
+warna_suka <- as.numeric(readline(prompt="Masukan warna: "))
+switch(warna_suka,"Merah","Hijau","Kuning")
+
+#coba lagi
+cek <- "3"
+x = switch(cek,
+       "1"="Hallo",
+       "2"="Dunia",
+       "3"="Semangat"
+       )
+print(x)
