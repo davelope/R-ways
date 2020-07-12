@@ -27,3 +27,16 @@ changelemen = c(10,20,40,80)
 changelemen[2] = 1000
 
 changelemen
+
+#melakukan operasi aritmatika, relational, logical pada vector
+vec1 <- c(10,20,30)
+vec2 <- c(1,2,3)
+
+vec1+vec2
+vec2-vec1
+vec1*vec2
+
+vec1==vec2
+vec1>vec2
+vec1<vec2
+
