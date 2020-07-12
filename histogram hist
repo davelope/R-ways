@@ -1,0 +1,5 @@
+#untuk menampilkan spread atau sebaran
+df <- data.frame(mtcars)
+df
+
+hist(df$mpg)
