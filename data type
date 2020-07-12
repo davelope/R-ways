@@ -1,0 +1,6 @@
+logical TRUE / FALSE
+Integer 22L, 197L
+Double atau Numerik 13.2, 4.3
+Complex 18 + 9i
+Character "Hello" #bisa pakai single atau double quotation marks
+Raw charToRaw("Contoh") #data disimpan dalam bentuk biner
