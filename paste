@@ -1,0 +1,12 @@
+namadepan <- c("Budi","Ani")
+namaakhir <- c("Waluyo","Budiani")
+
+paste(namadepan, namaakhir)
+
+#nyobain dibikin matrix
+z = matrix(paste(namadepan, namaakhir))
+z
+
+#nyobain dibikin matrix dengan aturan kolom dan baris
+z = matrix(paste(namadepan, namaakhir),1,2)
+z
