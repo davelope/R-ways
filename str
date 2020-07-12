@@ -3,3 +3,10 @@ penduduk.dki <- read.csv("https://academy.dqlab.id/dataset/dkikepadatankelurahan
 str(penduduk.dki)
 
 #cara ini bagus untuk pengenalan data pada tahap awal
+
+#################
+#contoh lain str
+#str dalam hal ini bukan string, tapi structure
+
+testv <- c(1,4,5)
+str(testv)
