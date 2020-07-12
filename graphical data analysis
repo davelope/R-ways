@@ -18,4 +18,25 @@
 #kalau mau disajikan dalam proporsi atau perbandingan, gunakan pie chart, misal: perbandingan wanita vs pria di kota
 
 #############INI UNTUK BIVARIAT
+#pakai scatter plot , tinggal pakai plot()
+
+#pakai stepped lines
+#untuk data yg mengikuti persamaan Minkowski
+#mau pakai lines() harus dibuat plot()
+
+x <- 1:10
+y <- 1:10
+plot(x,y)
+lines(x,y, col="green", type="s")
+
+#atau
+x <- 1:10
+y <- 1:10
+plot(x,y)
+lines(x,y, col="green", type="S")
+
+#boxplot
+#biasa untuk tipe factor
+#dipakai untuk melihat error pada data
+#untuk liat outlier
 
