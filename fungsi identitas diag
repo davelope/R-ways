@@ -1,0 +1,4 @@
+diag(4)
+diag(2)
+#identitas adalah yg diagonalnya bernilai 1
+#tinggal pake fungsi diag, dan tentukan mau berapa rowcol nya
