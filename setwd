@@ -3,3 +3,4 @@
 setwd('C:/Users')
 getwd()
 
+#perhatikan penulisan slash atau garis miringnya berlawanan dengan pada directory komputer
