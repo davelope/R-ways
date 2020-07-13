@@ -1,0 +1,13 @@
+dataku <- read.csv(file = 'datakelas.csv', sep=';')
+dataku
+
+#kalau belum setwd, bisa saja direct ke tempat kerjanya
+dataku <- read.csv("/tmp/datakelas.csv", sep=';')
+
+#read.csv akan memperlakukan data sebagai data.frame
+#R secara default  mengenali koma, tapi tidak titik koma
+#jadi, kalau separator koma, dia gausah dikasih sep=','
+
+####################################
+datakoma <- read.csv(file='datakelaskoma.csv', header = FALSE)
+datakoma
