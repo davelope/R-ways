@@ -1,0 +1,6 @@
+setwd('C:/Users/Administrator/Desktop/MODUL PYTHON/R script')
+#perhatikan garis miring berlawanan dengan yg ada di komputer
+
+library(imager)
+im <- load.image("cert-preview8607751449.jpeg")
+plot(im)
