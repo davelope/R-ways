@@ -10,3 +10,12 @@ z
 #nyobain dibikin matrix dengan aturan kolom dan baris
 z = matrix(paste(namadepan, namaakhir),1,2)
 z
+
+#paste itu fungsinya untuk concatenate
+
+##############################################
+my.name <- readline("Masukan nama: ")
+my.age <- readline("Masukan umur: ")
+my.age <- as.integer(my.age)
+
+paste("Hallo, my name is",my.name,"my age is ", my.age+1,"next year.")
