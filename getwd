@@ -1,0 +1,4 @@
+#mengatur working directory
+
+setwd('C:/Users')
+getwd()
