@@ -1,1 +1,7 @@
 read.table()
+
+#bisa dari file XLS atau XLSX
+#bisa juga dari clipboard
+
+data <- read.table("clipboard")
+data
