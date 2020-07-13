@@ -1,0 +1,5 @@
+
+
+png(filename="mtcars.png")
+plot(mtcars)
+dev.off()
