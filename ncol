@@ -1,0 +1,6 @@
+df <- mtcars
+str(df)
+nrow(df)
+ncol(df)
+
+#ini copy seset aja biar sekalian inget2
