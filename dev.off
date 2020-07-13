@@ -1,5 +1,8 @@
-
-
 png(filename="mtcars.png")
 plot(mtcars)
+dev.off()
+
+#bisa dibuat lebih spesifik ke 1 kolom
+png(filename="mtcars.png")
+plot(mtcars$mpg)
 dev.off()
