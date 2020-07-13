@@ -1,0 +1,3 @@
+library(gdata)
+
+dataxls = read.xls("dataexcel.xls")
