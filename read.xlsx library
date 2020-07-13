@@ -1,0 +1,4 @@
+library("xlsx)
+
+read.xlsx("dataexcel.xlsx", sheetName = "Sheet1")
+read.xlsx2("dataexcel.xlsx", sheetName = "Sheet1")
