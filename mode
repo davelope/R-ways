@@ -1,2 +1,5 @@
 ck <- c(18,29,900)
 mode(ck)
+
+dk <- (F)
+mode(dk)
