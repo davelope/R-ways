@@ -1,0 +1,8 @@
+#mengurangi elemen kedua dengan kesatu
+#mengurangi elemen ketiga dengan kedua
+#mengurangi elemen keempat dengan ketiga
+#mengurangi elemen kelima dengan keempat
+x <- c(100, 50, 70, 80, 60)
+diff(x)
+
+[1] -50  20  10 -20
