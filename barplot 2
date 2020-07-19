@@ -3,3 +3,15 @@ table(x) #menampilkan isi table apa adanaya
 barplot(x) #menampilkan isi table apa adanya, dalam bentuk grafik batang
 barplot(table(x)) #barplot dari tabel dengan menghitung frequencynya
 barplot(table(x)/length(x)) #barplot dengan menghitung proporsi nilainya
+
+########################################
+#ini untuk plot, untuk ingetin aja, ada di folder lainnya dengan judul plot
+x <- c(10,20,20,30,10,30,20,10,20,30,100)
+plot(x) #menampilkan data dalam bentuk plot apa adanya
+plot(table(x)) #menampilkan data dalam bentuk plot sesuai frekuensinya
+
+#alternatif lain penulisannya
+#kedua vector harus dalam bentuk numeric
+hasilsurvey <- c(1,2)
+freksurvey <- c(20,80)
+plot(hasilsurvey,freksurvey)
