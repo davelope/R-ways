@@ -1,0 +1,5 @@
+#akar pangkat 2
+x <- 100
+sqrt(x)
+
+[1] 10
