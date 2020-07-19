@@ -7,3 +7,18 @@ simpan #menampilkan isi table apa adanya
 #kolom 2 s.d. 3, sedangkan kolom 1 digunakan sebagai label Y
 plot(simpan[2:3], main="DATA PENDAPATAN DAN PENGELUARN PER BULAN,
      SATUAN JUTAAN RUPIAH")
+
+###############ALTERNATIF PLOTTING
+pendapatan = simpan$pendapatan
+pengeluaran = simpan$pengeluaran
+plot(pendapatan,pengeluaran, main="DATA PENDAPATAN DAN PENGELUARN PER BULAN,
+     SATUAN JUTAAN RUPIAH")
+
+##################ALTERNATIF DENGAN GGPLOT2
+library(ggplot2)
+PENDAPATAN = simpan$pendapatan
+PENGELUARAN = simpan$pengeluaran
+GENDER = simpan$gender #ini untuk memberikan warna 
+qplot(PENDAPATAN, PENGELUARAN, main="DATA PENDAPATAN DAN PENGELUARN PER BULAN,
+     SATUAN JUTAAN RUPIAH", xlab="Pendapatan per bulan", 
+      ylab="Pengeluaran per bulan", color=GENDER, shape=GENDER)
