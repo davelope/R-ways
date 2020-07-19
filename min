@@ -1,0 +1,5 @@
+#mengambil nilai terkecil dari suatu himpunan
+A <- c(10,25,90,75,95,57)
+min(A)
+
+[1] 10
