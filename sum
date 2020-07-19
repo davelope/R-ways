@@ -1,0 +1,5 @@
+#menjumlahkan seluruh anggota himpunan
+x <- c(100, 50, 70, 80, 60)
+sum(x)
+
+[1] 360
