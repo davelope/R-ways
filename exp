@@ -1,0 +1,5 @@
+#menampilkan nilai eksponensial / 2.78...
+x <- exp(1)
+x
+
+[1] 2.718282
