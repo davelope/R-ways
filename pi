@@ -1,0 +1,5 @@
+#menampilkan nilai phi / 3.14...
+x <- pi
+x
+
+[1] 3.141593
