@@ -16,3 +16,29 @@ seq(from=0, by=1, length.out=5)
 seq(2,10,1)
 
 [1]  2  3  4  5  6  7  8  9 10
+
+#membuat table dari suatu dataset
+x <- c(10,5,43,2,90,24)
+table(x)
+
+x
+ 2  5 10 24 43 90 
+ 1  1  1  1  1  1 
+
+#tabel informasi proporsi
+table(x)/length(x)
+
+x
+        2         5        10        24        43        90 
+0.1666667 0.1666667 0.1666667 0.1666667 0.1666667 0.1666667
+
+#contoh lain, untuk jawaban "ya" atau "tidak"
+#membuat tabel
+x <- c('ya','tidak','tidak','ya','tidak','ya','tidak','netral','ya','ya')
+table(x)
+
+#tabel informasi proporsi
+table(x)/length(x)
+
+
+
