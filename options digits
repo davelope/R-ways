@@ -1,0 +1,6 @@
+#menampilkan nilai angka dengan n terdepan
+x <- pi
+options(digits=3)
+x
+
+[1] 3.14
