@@ -22,3 +22,6 @@ GENDER = simpan$gender #ini untuk memberikan warna
 qplot(PENDAPATAN, PENGELUARAN, main="DATA PENDAPATAN DAN PENGELUARN PER BULAN,
      SATUAN JUTAAN RUPIAH", xlab="Pendapatan per bulan", 
       ylab="Pengeluaran per bulan", color=GENDER, shape=GENDER)
+
+
+
