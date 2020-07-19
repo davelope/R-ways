@@ -1,0 +1,3 @@
+#membuat grafik / diagram batang
+x <- c(10,5,20,30,45,76)
+barplot(x)
