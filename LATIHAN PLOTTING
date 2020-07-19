@@ -1,0 +1,9 @@
+#membaca data
+simpan <- read.table("C:\\Users\\Administrator\\Desktop\\MODUL PYTHON\\DATASET TRAINING\\DATA_PENDAPATAN_PENGELUARAN.csv",
+                     header=TRUE,sep=";")
+simpan #menampilkan isi table apa adanya
+
+#simpan[2:3] disini artinya yg digunakan untuk plotting adalah
+#kolom 2 s.d. 3, sedangkan kolom 1 digunakan sebagai label Y
+plot(simpan[2:3], main="DATA PENDAPATAN DAN PENGELUARN PER BULAN,
+     SATUAN JUTAAN RUPIAH")
