@@ -1,0 +1,5 @@
+#mengambil nilai terbesar dari suatu himpunan
+A <- c(10,25,90,75,95,57)
+max(A)
+
+[1] 95
