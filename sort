@@ -1,0 +1,5 @@
+#mengurutkan elemen suatu himpunan
+x <- c(100,20,50,1)
+sort(x)
+
+[1]   1  20  50 100
