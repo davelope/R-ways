@@ -1,0 +1,5 @@
+#menghitung nilai rata2
+x <- c(100, 50, 70, 80, 60)
+mean(x)
+
+[1] 72
