@@ -1,3 +1,6 @@
 #R punya datasets bawaan, tinggal ketik
 data()
 #untuk melihat  data built in apa saja yg tersedia
+
+#di ggplot2 ada dataset dengan judul mpg
+#di built in R ada dataset dengan judul AirPassengers , mtcars
