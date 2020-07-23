@@ -1,0 +1,3 @@
+#kalau data dalam bentuk tibbles
+#kita bisa lihat semua data dengan
+view(flights)
