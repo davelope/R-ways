@@ -1,1 +1,15 @@
+#menampilkan semua shortcut
 Alt + Shift + K
+
+#run satu baris
+ctrl + enter
+
+#help
+pencet tab setelah ngetik
+
+#kalau mau langsung eksekusi, sekalian bikin variable
+(z <- filter(flights, month == 1, day == 1))
+
+#kecilin font
+ctrl + -
+
