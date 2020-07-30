@@ -7,6 +7,8 @@
 10%%2 (modulus atau remainder dari pembagian)
 %/% (integer division) #seperti pembagian biasa saja, remainder dibuang
 
+TRUE + TRUE #2
+TRUE + FALSE #1
 a=log(123)
 b=sin(123)
 a
