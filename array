@@ -17,3 +17,4 @@ x <- 1:10 -1
 
 x <- seq(1,5)
 x <- seq(from=1, to=5)
+x <- seq(2,5,2) or x <- seq(2,5,by=2)
