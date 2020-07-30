@@ -3,6 +3,7 @@
 10-3
 10/2
 10 ^ 2
+10**2
 10%%2 (modulus atau remainder dari pembagian)
 %/% (integer division) #seperti pembagian biasa saja, remainder dibuang
 
