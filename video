@@ -1,0 +1,576 @@
+#load data
+#packages divided in 2 groups
+#base / built in, harus diload
+#contributed, harus di download dan load
+#most used R packages for DS
+#dplyr, tidyr, stringr, lubridate, httr, ggvis
+#ggplot2, shiny, rio, markdown
+#one package manager for all
+install.packages("pacman")
+#you can use either one of it
+require(pacman) #gives a confirmation messages
+library(pacman) #no comments
+
+#or this
+pacman::p_load(pacman, dplyr, tidyr, GGally, ggplot2, 
+               ggthemes, ggvis, httr, lubridate, plotly,
+               rio, markdown, shiny, stringr)
+library(datasets)
+
+#summarize data
+iris
+head(iris)
+summary(iris)
+?plot
+plot(iris)
+
+irisplot(iris)
+plot(iris$Species) #categorical variable
+plot(iris$Petal.Length) #quantitative variable
+plot(iris$Species, iris$Petal.Width) #Cat x quant
+plot(iris$Petal.Length, iris$Petal.Width) #quant pair
+
+#plot with options
+plot(iris$Petal.Length, iris$Petal.Width,
+     col = "#cc0000", #hex code for red
+     pch = 19, #use solid circles for points
+     #pch stands for point character
+     main = "UKURAN DAUN", #judul
+     xlab = "Petal Length", #sumbu x
+     ylab = "Petal Width" #sumbu y
+     )
+
+#plot formulas with options
+plot(cos, 0, 2*pi)
+plot(exp,1,5)
+plot(dnorm, -3, +3)
+
+plot(dnorm, -3,3,
+     col = "#cc0000",
+     lwd = 10, #line width
+     main = "Standard Normal Distribution",
+     xlab = "z-scores",
+     ylab = "density"
+     )
+
+#clean up
+#clear packages
+p_unload(stringr)
+p_unload(all)
+detach("package:datasets", unload = TRUE)
+
+#clear plots
+dev.off()
+
+#clear consoles
+#ctrl + L
+cat("\014")
+
+######################################
+#load data
+?mtcars
+head(mtcars)
+
+barplot(mtcars$cyl) #its not good one, don't do this !
+#yg diatas ini menggambarkan frek-nya satu persatu
+#dan kita ga perlu ini
+
+#langkah awal adalah membuat tablenya
+cylinders <- table(mtcars$cyl)
+cylinders
+barplot(cylinders) #ini yg benar, ditotal freq-nya
+plot(cylinders)
+
+#histogram
+#untuk shape, gaps, outliers, symmetry
+#ini pakai iris data untuk contohnya
+hist(iris$Petal.Length)
+hist(iris$Petal.Width)
+hist(iris$Sepal.Length)
+hist(iris$Sepal.Width)
+
+#histogram by groups
+#put groups in x row, 1 col
+par(mfrow = c(3,1))
+#ini settingan, jadi akan berlaku terus
+#kecuali kita yg ubah sendiri
+par(mfrow = c(1,1))
+
+#hist using options
+hist(iris$Petal.Width [iris$Species == "setosa"], #ini hanya opsi utk setosa
+     xlim = c(0,3), #range sumbu x
+     breaks = 9,
+     main = " Petal Width for Setosa Species",
+     xlab = "",
+     col = "red")
+
+#hist using options
+hist(iris$Petal.Width [iris$Species == "versicolor"],
+     xlim = c(0,3),
+     breaks = 9,
+     main = " Petal Width for Versicolor Species",
+     xlab = "",
+     col = "purple")
+
+#hist using options
+hist(iris$Petal.Width [iris$Species == "virginica"],
+     xlim = c(0,3),
+     breaks = 9,
+     main = " Petal Width for Virginica Species",
+     xlab = "",
+     col = "blue")
+
+#restore graphic parameters
+par(mfrow = c(1,1))
+
+#scatterplot untuk asosiasi
+#between 2 quant var
+#sebelumnya kan untuk 1 variable
+#sekarang asosiasi pasti melibatkan 2 variabel
+#linear, spread, outliers, correlation
+#pakai dataset mtcars
+
+#cek yg univariat distributions dulu
+hist(mtcars$wt)
+hist(mtcars$mpg)
+
+#basic x-Y plot for quantitative variables
+plot(mtcars$wt, mtcars$mpg)
+
+#plotting multiple variables with option
+plot(mtcars$wt, mtcars$mpg,
+     pch = 19, #solid circle
+     cex = 1.5,#make 150% size
+     col = "#cc0000", #red
+     main = "MPG as a function of Weight of Cars",
+     xlab = "weight of cars (in 1000 pounds)",
+     ylab = "MPG"
+     ) 
+
+#overlaying plots
+#increase information density
+#use restraint
+#just because you can, doesn't mean that you should
+?lynx
+head(lynx)
+
+#histogram
+hist(lynx)
+
+#hist with options
+hist(lynx,
+     breaks = 14, #suggest 14 bins
+     freq = FALSE, #axis show density, not freq.
+     col = "thistle1",
+     main = paste("Hist of Annual Canadian Lynx",
+                  "Trappings, 1821-1934"),
+     xlab = "Numbers of Lynx Trapped"
+     )
+
+#normal distribution
+curve(dnorm(x, mean = mean(lynx), sd = sd(lynx)),
+      col = "thistle4", #warna curve
+      lwd = 2, #lebar garis 2 px
+      add = TRUE) #superimpose on your previous graph
+
+#add two kernel density estimators
+lines(density(lynx), col = "blue", lwd = 2)
+lines(density(lynx, adjust = 3), col = "purple", lwd = 2)
+
+#rugplot
+rug(lynx, lwd = 2, col = "gray")
+
+#########################
+#setelah dapat gambar2nya, baru masuk ke angka
+#picures first, numbers later
+head(iris)
+summary(iris$Species) #categorical variable, in this case is freq.
+summary(iris$Sepal.Length) #quantitative variable
+summary(iris) #entire data frame
+
+library(psych)
+help(psych) #opens package PDF in browser
+describe(iris$Sepal.Length) #for 1 quant var only
+describe(iris) #for quantitative only
+
+#filtering for specific analysis
+hist(iris$Petal.Length)
+summary(iris$Petal.Length)
+
+summary(iris$Species) #get names and n for each species
+
+#select cases by its category
+#versicolor
+hist(iris$Petal.Length[iris$Species == 'versicolor'],
+     main = "Petal Length : Versicolor")
+
+#virginica
+hist(iris$Petal.Length[iris$Species == 'virginica'],
+     main = "Petal Length : Virginica")
+
+#setosa
+hist(iris$Petal.Length[iris$Species == 'setosa'],
+     main = "Petal Length : Setosa")
+
+#select cases by its values #hasilnya sama kayak setosa
+hist(iris$Petal.Length[iris$Petal.Length < 2],
+     main = "Petal Length < 2")
+
+#select cases by its category and values
+#short virginica
+hist(iris$Petal.Length[iris$Species == 'virginica' &
+                               iris$Petal.Length < 5.5],
+     main = "Petal Length : Short Virginica")
+
+#create subsample
+i.setosa <- iris[iris$Species == 'setosa',]
+
+#explore subsample
+head(i.setosa)
+summary(i.setosa$Petal.Length)
+hist(i.setosa$Petal.Length)
+
+#accessing data
+#data types & data structure
+
+#datatype::
+#numeric : single, double, integer)
+#character
+#logical
+#complex
+#raw
+
+#data structure::
+#vector : 1 dimension number, same data type
+#matrix / array : 2 dimension, row & col, same length
+##same data class, columns not named
+##array 3 or more dimension
+#data frame : can have vectors of multiple datatype,
+##all same length, closes R analogue to spreadsheet
+##has special functions
+#list : most flexible, ordered collections of elements,
+##can include lists
+##any class, length, structure
+
+#coercion of data type
+#transforming data type
+n1 <- 15
+n1
+typeof(n1)
+
+n2 <- 1.5
+n2
+typeof(n2)
+
+c1 <- "c"
+c1
+typeof(c1)
+
+c2 <- "lot of char"
+c2
+typeof(c2)
+
+l1 <- TRUE
+l1
+typeof(l1)
+
+l2 <- F #can be capital T
+l2
+typeof(l2)
+
+v1 <- c(1,2,3,4,5)
+v1
+is.vector(v1)
+
+v2 <- c("a","b","c")
+v2
+is.vector(v2)
+
+m1 <- matrix(c(T,T,F,F,T,F),nrow = 2)
+m1
+
+m2 <- matrix(c("a","b",
+               "c","d"),
+             nrow = 2,
+             byrow = T)
+m2
+
+##########################Array
+#give data, then dimensions
+#datanya 1 s.d. 24
+#dimensinya rows, cols, tabs
+a1 <- array(c(1:24),c(4,3,2))
+a1
+
+#menggabungkan vector dengan cbind
+#bentuknya menjadi matrix
+#kalau matrix bentuknya char semua
+#coba aja cek typeofnya
+vNumeric <- c(1,2,3)
+vCharacter <- c("a","b","c")
+vLogical <- c(T,F,T)
+
+dfa <- cbind(vNumeric,vCharacter,vLogical)
+dfa
+
+#membentuk dataframe
+df <- as.data.frame(cbind(vNumeric,vCharacter,vLogical))
+df
+
+#ini belajar cek struktur data
+#kalau matrix semua jadi karakter
+#kalau dataframe, semua tipe data sesuai apa adanya
+typeof(dfa)
+typeof(df)
+
+#LIST
+o1 <- c(1,2,3)
+o2 <- c("a","b","c")
+o3 <- c(T,F,T)
+
+list1 <- list(o1,o2,o3)
+list1
+
+list2 <- list(o1,o2,o3,list1)
+list2
+
+#coercing types
+#automatic coerce
+#to least restrictive data type
+(coerce <- c(1,"b",TRUE))
+typeof(coerce)
+
+#coerce numeric to integer
+(coerce2 <- 5)
+typeof(coerce2)
+
+(coerce3 <- as.integer(5))
+typeof(coerce3)
+
+(coerce4 <- c("1","2","3"))
+typeof(coerce4)
+
+(coerce5 <- as.numeric(c("1","2","3")))
+typeof(coerce5)
+
+(coerce6 <- matrix(1:9, nrow = 3, byrow = T))
+is.matrix(coerce6)
+
+(coerce7 <- as.data.frame(matrix(1:9, nrow = 3, byrow = T)))
+is.data.frame(coerce7)
+
+############Factors
+#categories and names
+
+#create data
+(x1 <- 1:3)
+(y <- 1:9)
+
+#combine variables
+(df1 <- cbind.data.frame(x1,y)) #x1 diulang
+typeof(df1$x1)
+str(df1) #checking the structure
+
+#coerce to factors
+(x2 <- as.factor(c(1:3)))
+(df2 <- cbind.data.frame(x2,y))
+typeof(df2$x2)
+str(df2)
+
+#define existing variables into factors
+x3 <- c(1:3)
+(df3 <- cbind.data.frame(x3, y))
+(df3$x3 <- factor(df3$x3,
+                  levels = c(1,2,3)))
+typeof(df3$x3)
+str(df3)
+
+#labels for factors
+x4 <- c(1:3)
+(df4 <- cbind.data.frame(x4,y))
+df4$x4 <- factor(df4$x4,
+                 levels = c(1,2,3),
+                 labels = c("macOS","Windows","Linux"))
+df4
+typeof(df4$x4)
+str(df4)
+
+#ordered factors and labels
+x5 <- c(1:3)
+(df5 <- cbind.data.frame(x5,y))
+df5
+(df5$x5 <- ordered(df5$x5,
+                 levels = c(3,1,2),
+                 labels = c("no","maybe","yes")))
+df5
+typeof(df5$x5)
+str(df5) #bentuknya akan jadi ordered factor
+
+#Entering Data
+
+x1 <- 0:10
+x1
+
+x2 <- 10:0
+x2
+
+?seq
+seq(from = 0, to = 10, by = 2)
+
+(x3 <- seq(10,12,2))
+(x3coba <- seq(10,0,-3))
+
+##############Enter multiple values with C
+?c
+
+x5 <- c(5,1,4,6,3)
+x5
+
+?scan
+#seperti user input
+#input data pada console
+x6 <- scan()
+x6
+
+?rep
+#repeats set
+x7 <- rep(T,5)
+x7
+
+#dalam c akan dijadikan 1 set, yakni True dan False
+x8 <- rep(c(TRUE,FALSE),5)
+x8
+
+#dibuat repeat masing2
+x9 <- rep(c(T,F), each = 5)
+x9
+
+##############importing data
+#csv, tsv, txt, xlsx, json (javascript object notation)
+#rio (R input output)
+
+#csv bisa diganti dengan txt atau xlsx
+rio_csv <- import("C:\\Users\\Administrator\\Downloads\\mbb.csv")
+rio_csv <- import("C:/Users/Administrator/Downloads/mbb.csv")
+#alternative way dari kedua cara diatas, bisa dipakai
+head(rio_csv)
+
+?View
+View(rio_csv)
+
+#kalau txt harus dijabarkan sep / delimiternya pakai apa
+#kalau csv kan jelas pakai comma
+#kalau tsv pakai tab
+r_txt1 <- read.table("alamat", header = T, sep = "\t")
+
+#Hierarchical Clustering
+?mtcars
+head(mtcars)
+#c untuk pilih kolom yg mau dimunculkan
+#koma di awal artinya uses all rows
+cars <- mtcars[, c(1:4,6:7,9:11)]
+head(cars)
+
+#using pipes from dplyr
+hc <- cars %>% #gets cars data
+      dist %>% #compute distance / dissimilarity matrix
+      hclust #compute hierarchical clusters
+hc
+plot(hc)
+
+#add boxes to plot
+rect.hclust(hc, k = 2, border = "gray")
+rect.hclust(hc, k = 3, border = "blude")
+rect.hclust(hc, k = 4, border = "green4")
+rect.hclust(hc, k = 5, border = "darkred")
+
+#compute pca
+#principal component analysis
+?mtcars
+head(mtcars)
+cars <- mtcars[, c(1:4,6:7,9:11)]
+head(cars)
+
+#for entire data frame
+pc <- prcomp(cars,
+             center = T, #center means to 0 (optional)
+             scale = T) #sets unit variance (helpful)
+pc
+
+#to specify variables
+pc <- prcomp(~ mpg + cyl + disp + hp + wt + qsec + am +
+                gear + carb,
+             data = mtcars,
+             center = T,
+             scale = T)
+pc
+
+#examine result
+summary(pc)
+
+#screeplot for number of components
+plot(pc) #first component is really important
+
+#correlation things (standard deviations & rotations)
+pc #it tells correlation, things like that
+
+#see how cases loads on PCs
+predict(pc) %>% round(2)
+
+#biplot of first two components
+biplot(pc)
+
+#regression
+#using data USJudgeRatings
+?USJudgeRatings
+head(USJudgeRatings)
+data <- USJudgeRatings
+
+#define variable groups
+x <- as.matrix(data[-12]) #-12 artinya don't include col 12
+y <- data[,12] #comma means from beginning, until col 12
+
+#regression with simultaneous entry
+
+#using variable groups
+reg1 <- lm(y ~ x) #lm means linear model
+#arti model diatas adalah, y predicted by x  
+
+#or specify individual variables manually
+reg1 <- lm(RTEN ~ CONT + INTO + DMNR + DILG + CFMG +
+              DECI + PREP + FAMI + ORAL + WRIT + PHYS,
+              data = USJudgeRatings)
+
+#results
+reg1 #coefficients only
+summary(reg1) #inferential tests
+
+anova(reg1) #coefficients with inferential sets
+coef(reg1) #coefficients (same as reg1)
+confint(reg1) #CI for coefficients
+resid(reg1) #residuals case by case
+hist(residuals(reg1)) #histogram of residuals
+
+library(lars,caret)
+#conventional stepwise regression
+stepwise <- lars(x,y, type = "stepwise")
+stepwise
+
+#stagewise
+#like stepwise, but with better generalizability
+forward <- lars(x,y, type = "forward.stagewise")
+forward
+
+#LAR : least angle regression
+lar <- lars(x,y, type = "lar")
+lar
+
+#LASSO : least absolute shrinkage and selection operator
+lasso <- lars(x,y, type = "lasso")
+lasso
+
+#comparison of  R^2 for new models
+r2comp <- c(stepwise$R2[6], forward$R2[6],
+            lar$R2[6], lasso$R2[6]) %>%
+            round(2)
+r2comp
