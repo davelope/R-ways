@@ -1,0 +1,26 @@
+x <- -1
+if (x >= 0){
+  cat("Hallo",x)
+} else {
+  cat("ceko",x)
+}
+
+x <- 0
+if (x == 0){
+  cat("angka 0=",x)
+} else if(x < 0){
+  cat("angka negatif=",x)
+} else {
+  cat("angka positif",x)
+}
+
+x <- -1
+ifelse(x>=0,"Positive","Negative")
+
+
+for(i in 1:5){
+  print(i)
+}
+
+x <- 1:10
+for(i in x) print(i)
