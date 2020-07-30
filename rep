@@ -1,0 +1,2 @@
+x <- rep(1, times=5)
+x <- rep("A", times=5)
