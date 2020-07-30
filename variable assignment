@@ -1,6 +1,9 @@
 #assign
 assign('x',10)
 
+#multiple assigning
+a <- b <- c <- 8
+
 #leftward assignment
 a = 5
 print (a)
