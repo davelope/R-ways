@@ -1,3 +1,6 @@
+#assign
+assign('x',10)
+
 #leftward assignment
 a = 5
 print (a)
